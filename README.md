@@ -48,9 +48,44 @@ Retailers lose **15–30% of potential revenue** annually to two failure modes �
 
 **Inventory Impact**: 3,281 Store-Dept combinations optimised. Average estimated cost saving: **~42% vs naive ordering** via EOQ.
 
----
+## 📊 EDA Highlights
 
-## 💡 Top Business Insights
+<details>
+<summary>View EDA Plots (10 charts)</summary>
+
+### 1. Total Weekly Sales Trend
+![Sales Trend](outputs/eda_plots/01_sales_trend.png)
+
+### 2. Monthly Seasonality Heatmap
+![Monthly Heatmap](outputs/eda_plots/02_monthly_heatmap.png)
+
+### 3. Sales Distribution & Monthly Boxplot
+![Sales Distribution](outputs/eda_plots/03_sales_distribution.png)
+
+### 4. Top 10 Stores by Revenue
+![Top Stores](outputs/eda_plots/04_top_stores.png)
+
+### 5. Holiday vs Regular Week Sales
+![Holiday Effect](outputs/eda_plots/05_holiday_effect.png)
+
+### 6. Year-over-Year Comparison
+![Yearly Comparison](outputs/eda_plots/06_yearly_comparison.png)
+
+### 7. Top 15 Departments by Revenue
+![Top Departments](outputs/eda_plots/07_top_departments.png)
+
+### 8. Time-Series Decomposition (Store 1, Dept 1)
+![Decomposition](outputs/eda_plots/08_decomposition.png)
+
+### 9. Stationarity Test (ADF)
+![Stationarity](outputs/eda_plots/09_stationarity.png)
+
+### 10. Rolling Mean & Std Dev
+![Rolling Statistics](outputs/eda_plots/10_rolling_statistics.png)
+
+</details>
+
+---
 
 | # | Finding | Impact |
 |---|---|---|
