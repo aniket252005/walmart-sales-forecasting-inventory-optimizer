@@ -40,10 +40,11 @@ INV_PATH       = Path(CFG["output"]["forecasts_dir"]) / "inventory_recommendatio
 # ─────────────────────────────────────────────
 # Data loaders
 # ─────────────────────────────────────────────
-@st.cache_data
+@st.cache_data(ttl=3600)
 def load_sales_data() -> pd.DataFrame:
     if PROCESSED_PATH.exists():
-        return pd.read_csv(PROCESSED_PATH, parse_dates=["Date"])
+        df = pd.read_csv(PROCESSED_PATH, parse_dates=["Date"])
+        return df
 
     # Synthetic demo fallback
     np.random.seed(42)
@@ -62,7 +63,7 @@ def load_sales_data() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-@st.cache_data
+@st.cache_data(ttl=3600)
 def load_inventory() -> pd.DataFrame:
     if INV_PATH.exists():
         df = pd.read_csv(INV_PATH)
@@ -117,6 +118,8 @@ inv_df   = load_inventory()
 if not PROCESSED_PATH.exists():
     st.warning("⚠️ Showing synthetic demo data. "
                "Run `python main.py` after placing train.csv in data/raw/ to use real data.")
+else:
+    st.success(f"✅ Real data loaded — {len(df_raw):,} rows · {df_raw['Store'].nunique()} stores · {df_raw['Dept'].nunique()} departments")
 
 # ─────────────────────────────────────────────
 # Sidebar
