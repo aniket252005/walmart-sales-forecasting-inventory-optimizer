@@ -1,26 +1,9 @@
-# ── Core ────────────────────────────────────────────
+# Dashboard only — lightweight for Streamlit Cloud deployment
+# Heavy ML packages (prophet, pmdarima, xgboost, scikit-learn)
+# are only needed to run main.py locally, not to serve the dashboard.
+
 pandas>=2.1.0,<2.3
 numpy>=1.26.0,<2.0
-scipy>=1.11.0,<1.14
-PyYAML>=6.0
-
-# ── Visualisation ────────────────────────────────────
-matplotlib>=3.8.0
-seaborn>=0.13.0
 plotly>=5.18.0
-
-# ── Machine Learning ─────────────────────────────────
-scikit-learn>=1.4.0,<1.6
-xgboost>=2.0.0,<2.1
-
-# ── Time-Series Models ───────────────────────────────
-statsmodels>=0.14.0
-pmdarima>=2.0.4
-prophet>=1.1.5
-
-# ── Streamlit Dashboard ──────────────────────────────
 streamlit>=1.31.0
-
-# ── Utilities ────────────────────────────────────────
-joblib>=1.3.0
-tqdm>=4.66.0
+PyYAML>=6.0
