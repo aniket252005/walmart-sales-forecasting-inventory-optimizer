@@ -125,12 +125,8 @@ else:
 # Sidebar
 # ─────────────────────────────────────────────
 with st.sidebar:
-    st.image(
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/"
-        "Walmart_Spark.svg/200px-Walmart_Spark.svg.png",
-        width=55,
-    )
-    st.title("Controls")
+    st.markdown("### 🛒 Walmart Forecasting")
+    st.markdown("---")
 
     stores = sorted(df_raw["Store"].unique())
     depts  = sorted(df_raw["Dept"].unique())
