@@ -253,15 +253,6 @@ The dashboard runs on **synthetic demo data automatically** if no processed CSV 
 
 ---
 
-## 📄 Resume Bullets
-
-- Engineered end-to-end sales forecasting system on 421K Walmart transactions using Random Forest and Prophet, achieving **5.88% MAPE** with **90-day** demand predictions across 45 stores and 81 departments
-- Developed inventory optimization engine computing Safety Stock, Reorder Point, and EOQ for **3,281 SKUs**, estimating **~42% reduction** in annual holding costs vs naive ordering
-- Built **33-feature** automated pipeline (lag variables, rolling statistics, cyclic seasonal encodings, holiday proximity) with walk-forward cross-validation across 5 time windows — zero data leakage
-- Deployed interactive Streamlit dashboard with live forecast charts, model comparison, and reorder alert system — accessible at public URL via Streamlit Cloud
-
----
-
 ## 📄 License
 
 MIT License — free to use, modify, and distribute with attribution.
