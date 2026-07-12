@@ -2,7 +2,7 @@
 
 ### End-to-End ML System · Prophet · XGBoost · SHAP · Power BI · Streamlit · Deployed on Streamlit Cloud
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Project-2ea44f?style=for-the-badge&logo=streamlit)](https://share.streamlit.io)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Project-2ea44f?style=for-the-badge&logo=streamlit)](https://walmart-sales-forecasting-inventory-optimizer-qqbappbgcf2cst5j.streamlit.app)
 [![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Prophet](https://img.shields.io/badge/ML-Prophet-blue?style=for-the-badge)](https://facebook.github.io/prophet/)
 [![XGBoost](https://img.shields.io/badge/ML-XGBoost-orange?style=for-the-badge)](https://xgboost.readthedocs.io/)
@@ -10,7 +10,7 @@
 
 A production-ready, end-to-end Machine Learning system for predicting Walmart product demand 30–90 days ahead and optimising inventory decisions. Built on 2+ years of real Walmart weekly sales data across 45 stores and 81 departments.
 
-*🚀 **Live Demo**: [your-name-walmart-forecast.streamlit.app](https://share.streamlit.io)*
+*🚀 **Live Demo**: [walmart-sales-forecasting-inventory-optimizer-qqbappbgcf2cst5j.streamlit.app](https://walmart-sales-forecasting-inventory-optimizer-qqbappbgcf2cst5j.streamlit.app)*
 
 ---
 
