@@ -24,8 +24,12 @@ data/raw/*.csv
 data/raw/*.zip
 data/raw/*.gz
 
-# Model artifacts (optional — comment out if you want to commit them)
-# outputs/models/
+# Keep processed data for dashboard deployment
+# data/processed/
+
+# Generated outputs
+outputs/models/
+outputs/reports/
 
 # Logs
 outputs/pipeline.log
