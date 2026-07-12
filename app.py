@@ -213,7 +213,7 @@ if not df_filt.empty:
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
         margin=dict(l=40, r=20, t=20, b=40),
     )
-    st.plotly_chart(fig, width=0)   # width=0 → full container width
+    st.plotly_chart(fig, use_container_width=True)
 else:
     st.info("No data for the selected Store / Dept / date range.")
 
@@ -250,7 +250,7 @@ with col_heat:
                           color_continuous_scale="Blues",
                           labels=dict(color="Sales ($)"), aspect="auto")
         fig_h.update_layout(height=240, margin=dict(l=20, r=20, t=10, b=30))
-        st.plotly_chart(fig_h, width=0)
+        st.plotly_chart(fig_h, use_container_width=True)
 
 # ─────────────────────────────────────────────
 # Model performance + Reorder alerts
@@ -270,7 +270,7 @@ with col_perf:
                    text_auto=".1f")
     fig_b.update_layout(height=320, showlegend=False,
                         margin=dict(l=20, r=20, t=10, b=60))
-    st.plotly_chart(fig_b, width=0)
+    st.plotly_chart(fig_b, use_container_width=True)
 
 with col_alerts:
     st.subheader("🚨 Reorder Alerts")
