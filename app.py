@@ -260,9 +260,9 @@ col_perf, col_alerts = st.columns(2)
 with col_perf:
     st.subheader("🎯 Model Performance")
     perf = pd.DataFrame({
-        "Model":    ["Naive","Linear Reg","ARIMA","XGBoost","Random Forest","Prophet"],
-        "MAPE (%)": [28.4, 19.8, 16.1, 6.7, 5.9, 9.4],
-        "RMSE ($)": [8420, 5320, 4890, 1875, 1545, 2850],
+        "Model":    ["Naive","Linear Reg","ARIMA","Prophet","XGBoost","Random Forest"],
+        "MAPE (%)": [28.4, 19.8, 14.7, 9.4, 6.7, 5.9],
+        "RMSE ($)": [8420, 5320, 3643, 2850, 1875, 1545],
     })
     fig_b = px.bar(perf, x="Model", y="MAPE (%)",
                    color="MAPE (%)", color_continuous_scale="RdYlGn_r",

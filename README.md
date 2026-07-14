@@ -37,10 +37,10 @@ Retailers lose **15–30% of potential revenue** annually to two failure modes �
 |---|---|---|---|---|
 | Naive Baseline | 28.4% | 8,420 | 6,210 | — |
 | Linear Regression | 19.76% | 5,320 | 3,892 | -2.27 |
-| ARIMA | ~16% | ~4,890 | ~3,620 | — |
+| **ARIMA (1,0,1)(1,0,0)[52]** | **14.73%** | **3,643** | **2,564** | **0.10** |
+| Prophet | 9.37% | 2,850 | 1,813 | 0.45 |
 | XGBoost | 6.70% | 1,875 | 1,274 | 0.59 |
 | **Random Forest ✓** | **5.88%** | **1,545** | **1,097** | **0.72** |
-| Prophet | 9.37% | 2,850 | 1,813 | 0.45 |
 
 **Random Forest selected as best model** — lowest MAPE (5.88%) and highest R² (0.72) on Store 1, Dept 1 test set.
 

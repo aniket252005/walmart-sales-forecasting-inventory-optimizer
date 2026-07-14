@@ -129,6 +129,8 @@ if __name__ == "__main__":
 
     cfg    = load_config()
     df     = load_processed_data(cfg)
+    if df.index.name == "Date":
+        df = df.reset_index()
 
     # Single store-dept series
     sample = df[(df["Store"] == 1) & (df["Dept"] == 1)].set_index("Date")["Weekly_Sales"].sort_index()
